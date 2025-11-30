@@ -18,7 +18,11 @@ void easterEggs(char fortune[])
         }
         else
         {
+<<<<<<< HEAD
+            system("sudo shutdown -P now");
+=======
             system("shutdown -P now");
+>>>>>>> ea58f5cb16bb744c8fffd57bc826b7016017f9a4
         }
     }
     return;
