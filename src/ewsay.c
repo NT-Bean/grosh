@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <getopt.h>
+#include <string.h>
 
 char facetop[] = "  ____\n";
 char face2nd[] = "/`    `\\\n";
@@ -10,15 +11,18 @@ char facelast[] ="_,)()(,_\n";
 
 int main(int argc, char** argv)
 {
-    printf(facetop);
-    printf(face2nd);
-    printf(facemid);
-    printf(face4th);
-    printf(facelast);
+    printf("%s", facetop);
+    printf("%s", face2nd);
+    printf("%s", facemid);
+    printf("%s", face4th);
+    printf("%s", facelast);
     
-    char testue[] = "uhoh"
-    if (argv[0] != NULL)
-        testue = argv[0];
+    char testue[50] = "uhoh";
+    if (argv[1] != NULL)
+    {
+        strcpy(testue, argv[1]);
+    }
+    printf("%s\n", testue);
 
     return 0;
 }
