@@ -4,6 +4,7 @@
 #include <string.h>
 
 // how to make any developer sob with just %d lines of code!
+// well, any developer who's not me
 
 const char facetop[] = "              ____\n";
 const char face2nd[] = "            /`    `\\\n";
@@ -22,38 +23,42 @@ char* wrapstr(char str[])
     strcpy(input, str);
 
     // char strbuff[30] = "\0";
-    for (;;)
+    for (int i = 0;; i += 33)
     {
-        for(int i = 30; i >= 0; i--)
+        if(input[(i/33)*30+30] == NULL)
         {
-            if(input[i] == ' ')
+            break;
+        }
+        for(int j = 30; j >= 0; j--)
+        {
+            if(input[j] == ' ')
             {
-                // strncpy(strbuff, input, i);
-                strncpy(input + 3 + (30 - i), input, strlen(input));
-                    printf("%s\n", input);
-                strncpy(input, input + 2 + (30 - i), 30 + (30 - i));
-                    printf("%s\n", input);
-                input[0] = '|';
-                input[31] = '|';
-                for(i = 30;; i--)
+                strncpy(input + 3 + (30 - j) +i, input +i, strlen(input));
+                    printf("%s\n\n", input);
+                strncpy(input +i, input + 2 + (30 - j) +i, 30 + (30 - j));
+                    printf("%s\n\n", input);
+                input[0 +i] = '#';
+                input[31 +i] = '|';
+                    printf("%s\n\n", input);
+                for(int k = 30 +i;; k--)
                 {
-                    if(input[i] == ' ')
+                    if(input[k] == ' ')
                     {
                         break;
                     }
                     else
                     {
-                        input[i] = ' ';
+                        input[k] = ' ';
                     }
                 }
-                input[32] = '\n';
-                input[33] = '|';
-                    printf("%s\n", input);
+                    printf("%s\n\n", input);
+                input[32 +i] = '\n';
+                input[33 +i] = '|';
+                    printf("%s\n\n", input);
                 
                 break;
             }
         }
-        break; // fix later
     }
     
     return input;
