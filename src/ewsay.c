@@ -83,7 +83,6 @@ int main(int argc, char** argv)
         strcpy(input, argv[1]);
     }
     input[strcspn(input, "\n")] = 0;
-        printf("%s\n\n", input);
 
     char output[2150] = "uh oh delux";
     strcpy(output, input);
