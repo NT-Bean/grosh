@@ -83,16 +83,27 @@ int main(int argc, char** argv)
         strcpy(input, argv[1]);
     }
     input[strcspn(input, "\n")] = 0;
+        printf("%s\n\n", input);
 
     char output[2150] = "uh oh delux";
     strcpy(output, input);
     
     if(strlen(input) <= 30)
     {
-        strncpy(output + 1, output, strlen(output));
-        output[0] = '|';
-        output[31] = '|';
-        output[32]='\n';
+        memmove(output + 1, output, strlen(output) + 1);
+            int j;
+            for(j = 0; j <= 31; j++)
+            {
+                if(output[j] == '\0')
+                    break;
+            }
+            for(; j<=30; j++)
+            {
+                output[j] = ' ';
+            }
+            output[0] = '|';
+            output[31] = '|';
+            output[32] = '\n';
     }
     else
     {
