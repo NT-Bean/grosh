@@ -53,7 +53,7 @@ int main()
 			strcpy(bline, line);
 		p += 1.;
 	}
-	printf("%s\n", bline);
+	printf("'%s'\n", bline);
     easterEggs(bline);
 	return(0);
 }
