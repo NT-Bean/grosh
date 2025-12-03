@@ -36,7 +36,7 @@ int main()
 	long t;
 	FILE *f;
 
-	f = fopen("/usr/bin/grosh/lib/fortunes", "r");
+	f = fopen("/usr/local/bin/grosh/lib/fortunes", "r");
 	if (f == NULL) {
 		printf("Memory fault -- core dumped\n");
 		exit(1);
