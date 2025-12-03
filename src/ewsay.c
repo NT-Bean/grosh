@@ -89,10 +89,20 @@ int main(int argc, char** argv)
     
     if(strlen(input) <= 30)
     {
-        strncpy(output + 1, output, strlen(output));
-        output[0] = '|';
-        output[31] = '|';
-        output[32]='\n';
+        memmove(output + 1, output, strlen(output) + 1);
+            int j;
+            for(j = 0; j <= 31; j++)
+            {
+                if(output[j] == '\0')
+                    break;
+            }
+            for(; j<=30; j++)
+            {
+                output[j] = ' ';
+            }
+            output[0] = '|';
+            output[31] = '|';
+            output[32] = '\n';
     }
     else
     {
