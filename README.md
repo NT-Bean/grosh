@@ -8,4 +8,4 @@
 ```      
 A collection of custom CLI apps with some very disgusting code.
 
-Note: As of 11/30/2025, I no longer have multiple assignments that I should be working on instead of this! i did them!!
+Note: As of 12/3/2025, I once again have assignments i should be working on instead of this. Specifically math.

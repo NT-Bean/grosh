@@ -1,7 +1,15 @@
 #!/bin/bash
 
-#grossfortune compilation
-sudo /usr/bin/gcc ./src/grossfortune.c -o /usr/local/bin/grossfortune
+#pre-requisite
+sudo mkdir /usr/local/bin/grosh
+sudo mkdir /usr/local/bin/grosh/lib
 
-#ewsay compile
+#grossfortune build
+sudo /usr/bin/gcc ./src/grossfortune.c -o /usr/local/bin/grossfortune
+sudo cp ./src/lib/fortunes /usr/local/bin/grosh/lib
+
+#ewsay build
 sudo /usr/bin/gcc ./src/ewsay.c -o /usr/local/bin/ewsay
+
+#caramelldansen build
+sudo /usr/bin/gcc ./src/caramelldansen.c -o /usr/local/bin/caramelldansen
