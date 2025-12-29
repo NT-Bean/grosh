@@ -8,4 +8,20 @@
 ```      
 A collection of custom CLI apps with some very disgusting code.
 
-Note: As of 12/3/2025, I once again have assignments i should be working on instead of this. Specifically math.
+Note: As of 12/29/2025, it is winter break and I once again have free will.
+
+# Install
+
+## Linux
+
+### Prerequisites:
+Gnu C Compiler (`gcc`). Should come pre-installed. I think.
+
+### Run:
+```
+git clone https://github.com/NT-Bean/grosh.git
+cd grosh/
+sh install.sh
+```
+## Windows
+ask ari or smth
