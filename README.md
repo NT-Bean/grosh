@@ -25,3 +25,13 @@ sh install.sh
 ```
 ## Windows
 ask ari or smth
+
+# Uninstall
+
+## Linux
+
+### Run:
+```
+sudo rm -r /usr/local/bin/grosh
+```
+that's it
