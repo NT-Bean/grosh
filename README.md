@@ -15,7 +15,7 @@ Note: As of 12/29/2025, it is winter break and I once again have free will.
 ## Linux
 
 ### Prerequisites:
-Gnu C Compiler (`gcc`). Should come pre-installed. I think.
+Gnu C Compiler (`gcc`). Comes pre-installed on some distros, but otherwise, install it via however method (ex. on Ubuntu/Debian: `sudo apt install build-essential`).
 
 ### Run:
 ```
@@ -25,3 +25,13 @@ sh install.sh
 ```
 ## Windows
 ask ari or smth
+
+# Uninstall
+
+## Linux
+
+### Run:
+```
+sudo rm -r /usr/local/bin/grosh
+```
+that's it

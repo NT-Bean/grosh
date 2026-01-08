@@ -25,8 +25,18 @@ void easterEggs(char fortune[])
 }
 
 // stolen sraight from Unix Version 7. i hope it's different enough to be fine
-int main()
+int main(int argc, char** argv)
 {
+	for (int i = 0; i < argc; i++) {
+        if (strcmp(argv[i], "-h") == 0) {
+			printf("~-------------------------------------------------------~\n");
+			printf("grossfortune: the shittiest fortune teller on the market.\n");
+			printf("only one flag: -1. disables the computer killer.\n");
+			printf("~-------------------------------------------------------~\n");
+            return 0;
+		}
+    }
+
     const int charlim = 2000;
     char line[charlim];
     char bline[charlim];
@@ -54,6 +64,11 @@ int main()
 		p += 1.;
 	}
 	printf("'%s'\n", bline);
+	for (int i = 0; i < argc; i++) {
+        if (strcmp(argv[i], "-1") == 0) {
+            return 0;
+		}
+    }
     easterEggs(bline);
 	return(0);
 }
