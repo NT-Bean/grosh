@@ -8,7 +8,7 @@
 ```      
 A collection of custom CLI apps with some very disgusting code.
 
-Note: As of 12/29/2025, it is winter break and I once again have free will.
+Note: As of 3/3/2026, i got distracted by other things
 
 # Install
 
